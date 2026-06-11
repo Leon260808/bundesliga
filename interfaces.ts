@@ -1,12 +1,12 @@
-export interface FussballMannschaft{
+export interface FussballTeam {
     name: string;
 }
 
 export interface Match {
-    team1: FusballManschaft;
-    team2: FusballManschaft;
-    scoreTeam1: number;
-    scoreTeam2: number;
+    homeTeam: FussballTeam;
+    guestTeam: FussballTeam;
+    scoreHomeTeam: number | null;
+    scoreGuestTeam: number | null;
 }
 
 export interface Tournament {
