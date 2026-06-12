@@ -6,16 +6,16 @@ Deno.test("createTournamentPlan erstellt alle Matches", () => {
 
     //Arrange
     const teams: FussballTeam[] = [
-        { name: "FC Bayern München" },
-        { name: "Borussia Dortmund" },
-        { name: "RB Leipzig" },
-        { name: "Bayer 04 Leverkusen" },
-        { name: "Eintracht Frankfurt" },
-        { name: "VfB Stuttgart" },
-        { name: "Hamburger SV" },
-        { name: "FC Schalke 04" },
-        { name: "Werder Bremen" },
-        { name: "1. FC Köln" }
+        { name: "FC Bayern München", strength: 10 },
+        { name: "Borussia Dortmund", strength: 9 },
+        { name: "RB Leipzig", strength: 8 },
+        { name: "Bayer 04 Leverkusen", strength: 7 },
+        { name: "Eintracht Frankfurt", strength: 6 },
+        { name: "VfB Stuttgart", strength: 5 },
+        { name: "Hamburger SV", strength: 4 },
+        { name: "FC Schalke 04", strength: 3 },
+        { name: "Werder Bremen", strength: 2 },
+        { name: "1. FC Köln", strength: 1 }
     ]
 
     //Act
@@ -29,16 +29,16 @@ Deno.test("createTournamentPlan erstellt alle Matches", () => {
 Deno.test("kein Team spielt gegen sich selbst", () => {
     //Arrange
     const teams: FussballTeam[] = [
-        { name: "FC Bayern München" },
-        { name: "Borussia Dortmund" },
-        { name: "RB Leipzig" },
-        { name: "Bayer 04 Leverkusen" },
-        { name: "Eintracht Frankfurt" },
-        { name: "VfB Stuttgart" },
-        { name: "Hamburger SV" },
-        { name: "FC Schalke 04" },
-        { name: "Werder Bremen" },
-        { name: "1. FC Köln" }
+        { name: "FC Bayern München", strength: 10 },
+        { name: "Borussia Dortmund", strength: 9 },
+        { name: "RB Leipzig", strength: 8 },
+        { name: "Bayer 04 Leverkusen", strength: 7 },
+        { name: "Eintracht Frankfurt", strength: 6 },
+        { name: "VfB Stuttgart", strength: 5 },
+        { name: "Hamburger SV", strength: 4 },
+        { name: "FC Schalke 04", strength: 3 },
+        { name: "Werder Bremen", strength: 2 },
+        { name: "1. FC Köln", strength: 1 }
     ]
 
     //Act
