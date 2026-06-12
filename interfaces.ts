@@ -13,3 +13,14 @@ export interface Match {
 export interface Tournament {
     matches: Match[];
 }
+
+export interface TableEntrySorted {
+    name: string;
+    points: number;
+    goalsFor: number;
+    goalsAgainst: number;
+    goalDifference: number;
+    wins: number;
+    draws: number;
+    losses: number;
+}
