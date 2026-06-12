@@ -2,8 +2,10 @@ import {FussballTeam} from "./interfaces.ts";
 
 export async function fetchTeams(path: string): Promise<FussballTeam[]> {
   const text = await Deno.readTextFile(path)
-  const teamNames = text.split("\n")
-
+  const teamNames = text
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter((line) => line.length > 0);
 
   const teams: FussballTeam[] = []
   teamNames.map((teamName, i) => {
