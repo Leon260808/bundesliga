@@ -1,0 +1,1 @@
+WICHTIG: immer mit `--allow-read` flag ausführen
