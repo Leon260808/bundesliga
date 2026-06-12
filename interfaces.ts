@@ -1,5 +1,6 @@
 export interface FussballTeam {
     name: string;
+    strength: number;
 }
 
 export interface Match {
