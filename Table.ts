@@ -1,7 +1,7 @@
 import { TableEntrySorted, Game } from "./interfaces.ts";
 
 export function createTable(TableEntry: TableEntrySorted[]) {
-    console.log("Leaderboard:\\n")
+    console.log("Leaderboard:\n")
     console.log("-------------------------------------------------------------------------------------------------------")
     console.log("| Team                 | Points | Goals For | Goals Against | Goal Difference | Wins | Draws | Losses |")
     console.log("-------------------------------------------------------------------------------------------------------")
