@@ -93,17 +93,6 @@ function getOrCreateStanding(
     standings.set(teamName, newStanding);
     return newStanding;
 }
-    
-
-
-if (import.meta.main) {
-    createTableEntries([
-        { team1: "FC Bayern München", team2: "Borussia Dortmund", goals_team1: 4, goals_team2: 2 },
-        { team1: "Borussia Dortmund", team2: "FC Bayern München", goals_team1: 1, goals_team2: 1 },
-        { team1: "FC Bayern München", team2: "RB Leipzig", goals_team1: 3, goals_team2: 0 },
-        { team1: "RB Leipzig", team2: "Borussia Dortmund", goals_team1: 2, goals_team2: 2 },
-    ])
-}
 
 
 
