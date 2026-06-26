@@ -11,8 +11,8 @@ function simulateMatch(match: Match): void {
   let homeGoals = getRandomInt(0, 5);
   let guestGoals = getRandomInt(0, 5);
 
-  homeGoals = Math.max(0, Math.min(5, homeGoals + Math.floor(strengthBonus)));
-  guestGoals = Math.max(0, Math.min(5, guestGoals - Math.floor(strengthBonus)));
+  homeGoals = Math.max(0, Math.min(5, homeGoals + Math.round(strengthBonus)));
+  guestGoals = Math.max(0, Math.min(5, guestGoals - Math.round(strengthBonus)));
 
   match.scoreHomeTeam = homeGoals;
   match.scoreGuestTeam = guestGoals;

@@ -17,7 +17,7 @@ Deno.test("AK1: Stärkere Teams gewinnen im Schnitt mehr", () => {
     simulateTournament(tournament);
 
     const match = tournament.matches[0];
-    if (match.scoreHomeTeam > match.scoreGuestTeam) {
+    if (match.scoreHomeTeam! > match.scoreGuestTeam!) {
       strongWins++;
     }
   }
