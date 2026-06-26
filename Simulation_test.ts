@@ -1,4 +1,4 @@
-import { assertEquals } from "https://deno.land/std@0.208.0/assert/mod.ts";
+import { assertEquals } from "@std/assert";
 import { simulateTournament } from "./Simulation.ts";
 import { createTournamentPlan } from "./TournamentPlan.ts";
 import { FussballTeam } from "./interfaces.ts";
@@ -17,7 +17,7 @@ Deno.test("AK1: Stärkere Teams gewinnen im Schnitt mehr", () => {
     simulateTournament(tournament);
 
     const match = tournament.matches[0];
-    if (match.scoreHomeTeam > match.scoreGuestTeam) {
+    if (match.scoreHomeTeam! > match.scoreGuestTeam!) {
       strongWins++;
     }
   }
