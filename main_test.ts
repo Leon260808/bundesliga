@@ -1,6 +1,5 @@
-import { assertEquals } from "@std/assert";
-import { add } from "./main.ts";
+import { runSeason } from "./main.ts";
 
-Deno.test(function addTest() {
-  assertEquals(add(2, 3), 5);
+Deno.test("runSeason läuft mit gerader Teamanzahl ohne Fehler", async () => {
+  await runSeason("./testfiles/even_teams.txt");
 });
