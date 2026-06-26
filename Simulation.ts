@@ -18,8 +18,9 @@ function simulateMatch(match: Match): void {
   match.scoreGuestTeam = guestGoals;
 }
 
-export function simulateTournament(tournament: Tournament): void {
+export function simulateTournament(tournament: Tournament): Tournament {
   for (const match of tournament.matches) {
     simulateMatch(match);
   }
+  return tournament;
 }
