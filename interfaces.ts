@@ -24,3 +24,10 @@ export interface TableEntrySorted {
     draws: number;
     losses: number;
 }
+
+export interface Game {
+    team1: string;
+    team2: string;
+    goals_team1: number;
+    goals_team2: number;
+}
